@@ -12,6 +12,9 @@ connectDB();
 const categoryRoutes = require("./routes/categoryRoutes");
 app.use(categoryRoutes);
 
+const productRoutes = require("./routes/productRoutes");
+app.use(productRoutes);
+
 app.listen(PORT, (err) => {
     if (err) throw err;
     console.log(`Listening on port ${PORT}`);

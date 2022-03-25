@@ -9,16 +9,16 @@ const {
     editCategory,
 } = require("../controller/categoryController");
 
-router.post("/addcategory", addCategory);
+router.post("/category/addcategory", addCategory);
 
-router.get("/getcategory", getCategory);
+router.get("/category/getcategory", getCategory);
 
-router.put("/deletesubcategory", deleteSubcategory);
+router.put("/category/deletesubcategory", deleteSubcategory);
 
-router.delete("/deletecategory/:id", deleteCategory);
+router.delete("/category/deletecategory/:id", deleteCategory);
 
-router.put("/editsubcategory", editSubcategory);
+router.put("/category/editsubcategory", editSubcategory);
 
-router.put("/editcategory", editCategory);
+router.put("/category/editcategory", editCategory);
 
 module.exports = router;
